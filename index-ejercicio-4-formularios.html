@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Registro de cliente</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles-ejercicio-4-formularios.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h3>Formulario de registro</h3>
+            <form name="registro-cliente" autocomplete="on">
+                
+                <label for="name">Nombre<input type="text" id="name" placeholder="Ada"></label>
+                
+                <label for="last-name">Apellido<input type="text" id="last-name" placeholder="Lovelace"></label>
+                
+                <label for="dni">DNI<input type="number" id="dni" maxlength="8" max="99999999" placeholder="12345678"></label>
+                
+                <label for="email">Email<input type="email" id="email" placeholder="adalovelace@gmail.com"></label>
+                
+                <label for="password">Contraseña<input type="password" id="password" maxlength="16" minlength="8" placeholder="PepiTo85abc"></label>
+                
+                <label for="repeat-password">Repetir contraseña<input type="password" id="repeat-password" maxlength="16" minlength="8" placeholder="PepiTo85abc"></label>
+                
+                <small>*La contraseña debe poseer entre 8 y 16 caracteres</small>
+                
+                <div class="terms-and-conditions">
+                    <input type="checkbox" id="terms-and-conditions">
+                    <label for="terms-and-conditions">Acepto <a href="#">términos y condiciones</a></label> 
+                </div>
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </main>
+    </body>
+
+</html>
